@@ -19,7 +19,6 @@ const { musicas } = require('./dark/musicas')
 const { gbin } = require('./src/gbin')
 const { gpessoa } = require('./src/gpessoa')
 const { tool } = require('./dark/tool')
-const { chentai } = require('./src/chentai')
 const { gcpf } = require('./src/gcpf')
 const { addsay } = require('./src/addsay')
 const { listsay } = require('./src/listsay')
@@ -1151,10 +1150,6 @@ const get = require('got')
                    case 'pack':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
-                    break
-                   case 'chentai':
-                    if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, chentai(prefix), text, { quoted: mek })
                     break
                    case 'gcpf':
                     if (!isPremium) return reply(mess.only.premium)
@@ -5924,7 +5919,7 @@ ${line}85 *${prefix}modapk*
 ${line}86 *${prefix}indo10*
 ${line}87 *${prefix}daftarvip [para virar Premium]*
 ${line}88 *${prefix}qrcode*
-${line}89 *${prefix}chentai*
+${line}89 *${prefix}chentai*(off)
 ${line}90 *${prefix}gcpf*
 ${line}91 *${prefix}gbin*
 ${line}92 *${prefix}pack*
